@@ -69,12 +69,36 @@ body .container .project-container .title h2 {
           user-select: none;
 }
 body .container .project-container .content {
+  width: 100%;
   margin-top: 40px;
   padding: 10px;
   color: #f0dc4e;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  min-height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+body .container .project-container .content .display-text {
+  grid-column: 1/-1;
+  background-color: #123456;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 10px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+body .container .project-container .content button {
+  cursor: pointer;
+}
+body .container .project-container .content .two-span {
+  grid-column: span 2;
 }
 body .project-container::before {
-  content: "Project no.";
+  content: "Project 8";
   position: absolute;
   top: -10px;
   left: 20px;
