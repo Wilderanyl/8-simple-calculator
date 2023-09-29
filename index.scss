@@ -116,11 +116,17 @@ body {
         padding: 10px;
         color: $bgColorH;
         display: grid;
+        gap: 10px;
         align-content: center;
         justify-content: center;
         min-height: 100vh;
         grid-template-columns: repeat(4, 100px);
         grid-template-rows: minmax(120px, auto)repeat(5, 100px);
+        button {
+          font-size: 20px;
+          font-weight: bold;
+          color: $colorH;
+        }
         .display-text {
           grid-column: 1 / -1;
           background-color: $bgColorH;

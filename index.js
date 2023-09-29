@@ -87,21 +87,21 @@ function calculation() {
   usedOperator = undefined;
 }
 
-function getStandardDisplay(number) {
-  const stringNumber = number.toString();
-  const integerDigits = parseFloat(stringNumber.split(".")[0]);
-  const decimalDigit = stringNumber.split(".")[1];
-  let integerDisplay;
-  if (isNaN(integerDigits)) {
-    integerDisplay = "";
-  } else {
-    integerDisplay = integerDigits.toLocaleString("en", {
-      maximumFractionDigits: 0,
-    });
-  }
-  if (decimalDigit != null) {
-    return `${integerDigits}.${decimalDigit}`;
-  } else {
-    return integerDigits;
-  }
-}
+// function getStandardDisplay(number) {
+//   const stringNumber = number.toString();
+//   const integerDigits = parseFloat(stringNumber.split(".")[0]);
+//   const decimalDigit = stringNumber.split(".")[1];
+//   let integerDisplay;
+//   if (isNaN(integerDigits)) {
+//     integerDisplay = "";
+//   } else {
+//     integerDisplay = integerDigits.toLocaleString("en", {
+//       maximumFractionDigits: 0,
+//     });
+//   }
+//   if (decimalDigit != null) {
+//     return `${integerDigits}.${decimalDigit}`;
+//   } else {
+//     return integerDigits;
+//   }
+// }
