@@ -123,7 +123,7 @@ body {
         grid-template-rows: minmax(120px, auto)repeat(5, 100px);
         .display-text {
           grid-column: 1 / -1;
-          background-color: #123456;
+          background-color: $bgColorH;
           display: flex;
           align-items: flex-end;
           justify-content: space-around;
@@ -131,6 +131,14 @@ body {
           padding: 10px;
           word-wrap: break-word;
           word-break: break-all;
+          color: $colorH;
+        font-size: 20px;
+          .previous-text {
+            font-weight: 100;
+          }
+          .current-text {
+            font-weight: bold;
+          }
         }
       button {
         cursor: pointer;

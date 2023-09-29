@@ -82,7 +82,7 @@ body .container .project-container .content {
 }
 body .container .project-container .content .display-text {
   grid-column: 1/-1;
-  background-color: #123456;
+  background-color: #f0dc4e;
   display: flex;
   align-items: flex-end;
   justify-content: space-around;
@@ -90,6 +90,14 @@ body .container .project-container .content .display-text {
   padding: 10px;
   word-wrap: break-word;
   word-break: break-all;
+  color: #2e302c;
+  font-size: 20px;
+}
+body .container .project-container .content .display-text .previous-text {
+  font-weight: 100;
+}
+body .container .project-container .content .display-text .current-text {
+  font-weight: bold;
 }
 body .container .project-container .content button {
   cursor: pointer;
